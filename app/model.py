@@ -7,7 +7,7 @@ from sklearn.pipeline import Pipeline
 from app.preprocessing import preprocess_features
 
 
-MODEL_NAME = "support_vector_machine"
+MODEL_NAME = "breast_cancer_svm"
 MODEL_PATH = Path(__file__).resolve().parents[1] / "models" / "svm.joblib"
 
 
