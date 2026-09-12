@@ -1,4 +1,4 @@
-docker compose ps# Local SVM Integration Suite
+# Local SVM Integration Suite
 
 Service FastAPI phân loại nhị phân bằng Support Vector Machine, có tiền xử lý, huấn luyện, xác suất dự đoán và Docker health check.
 
@@ -6,9 +6,13 @@ Service FastAPI phân loại nhị phân bằng Support Vector Machine, có ti�
 
 ```powershell
 python -m venv .venv
+
 .\.venv\Scripts\Activate.ps1
+
 pip install -r requirements.txt
+
 python training/train.py
+
 uvicorn app.main:app --reload --port 3000
 ```
 
