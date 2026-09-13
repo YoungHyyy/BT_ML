@@ -15,7 +15,7 @@ MODEL_PATH = ROOT / "models" / "svm.joblib"
 def train_model() -> None:
     dataset = load_breast_cancer()
     features = dataset.data[:, :4]
-    labels = dataset.target
+    labels = 1 - dataset.target
 
     train_features, _, train_labels, _ = train_test_split(
         features, labels, test_size=0.2, random_state=42, stratify=labels
